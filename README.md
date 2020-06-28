@@ -5,6 +5,4 @@ Esse repositório guarda um projeto em Angular com algumas aplicações derivada
 Projetos:
   1. Iniciante:
      - Conversor de binário para decimal;
-     - Customizador de raio da borda (em produção);
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-oealpm)
+     - Customizador de raio da borda;
