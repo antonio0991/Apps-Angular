@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  ul li {
+    border-color: purple;
+    border-width: 10%;
+    border-style: solid;
+    background: #242424;
+    padding: 1em;
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  ul li a{
+    color: white;
+    font-size: 2em;
+  }
+  

@@ -1,0 +1,60 @@
+<div class="border-radius-containter">
+      <div class="text-div">
+        A propriedade <i>border-radius</i> do CSS permite a personalização do raio das pontas. O raio pode ser definido por até 4 parâmetros (ou 8 de maneira mais
+        avançada). Os parâmetros são o tamanho do raio em píxels (px) ou na porcentagem (%) do tamanho do bloco. Experimente modificá-los abaixo.
+      </div>
+      <div class="radius-wrapper">
+        <div class="input-div">
+          <input class="radius-input"
+          placeholder = "Top-left"
+          id = "Top-left"
+          type = "text"
+          (keyup) = "onKeyup($event)"
+          (keyup.enter) = "onSave(campo.value)"
+          (blur) = "onSave(campo.value)"
+          #campo
+          >
+        </div>
+        <div class="input-div">
+          <input class="radius-input"
+          placeholder = "Top-right"
+          id = "Top-right"
+          type = "text"
+          (keyup) = "onKeyup($event)"
+          (keyup.enter) = "onSave(campo.value)"
+          (blur) = "onSave(campo.value)"
+          #campo
+          >
+        </div>
+      </div>
+      <div class="radius-wrapper">
+        <div class="input-div">
+          <input class="radius-input"
+          placeholder = "Bottom-left"
+          id = "Bottom-left"
+          type = "text"
+          (keyup) = "onKeyup($event)"
+          (keyup.enter) = "onSave(campo.value)"
+          (blur) = "onSave(campo.value)"
+          #campo
+          >
+        </div>
+        <div class="input-div">
+          <input class="radius-input"
+          placeholder = "Bottom-right"
+          id = "Bottom-right"
+          type = "text"
+          (keyup) = "onKeyup($event)"
+          (keyup.enter) = "onSave(campo.value)"
+          (blur) = "onSave(campo.value)"
+          #campo
+          >
+        </div>
+      </div>
+      <div class = "square-wrapper">
+        <div class = "raio-interativo"
+        [ngStyle] = "{'border-radius': borderRadius}">
+        </div>
+      </div>
+    {{ borderRadius }}
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+        <div align="center">
+          <h3>Conversor de Binário Para Decimal: </h3>
+          <input placeholder="Insira o número em binário"
+              type="text"
+              maxlength="8"
+              (keyup)="onKeyup($event)"
+              (keyup.enter)="onSave(campo.value)"
+              (blur)="onSave(campo.value)"
+              #campo
+              >
+              <P></P>
+              <span style="color: white">Número em decimal: {{ decimal }}</span>
+              <div  class="alert" 
+              role="alert" 
+              style="display:none;"
+              [style.display]="ehBinario() ? 'none' : 'block'"
+              >
+              O número precisa ser binário (apenas 0s e 1s) e Ter até 8 dígitos
+      </div>
+</div>
