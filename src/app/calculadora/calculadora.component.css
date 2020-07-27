@@ -1,0 +1,120 @@
+
+button{
+    font-family: Helvetica;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    outline: none;
+}
+
+.tela {
+    width: 100%;
+    height: 20%;
+    background-color: inherit;
+    border-bottom-style: solid;
+    margin-bottom: 5px;
+    border:0;
+    font-family: inherit;
+    font-size: 50;
+    color: inherit;
+    text-align: right;
+    line-height: 0px;
+    padding-top: 70px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+div {
+    font-family: Helvetica;
+    font-size: 25px;
+    color: white;
+}
+
+.teclas {
+    width: 100%;
+    height: 79%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.numero{
+    background-color: #393939;
+    width: 60px;
+    height: 60px;
+    margin: 2.3%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.zero-wrapper{
+    background-color: #393939;
+    width: 133px;
+    height: 60px;
+    margin: 2%;
+    border-radius: 30px;
+    text-align: left;
+    line-height: 60px;
+    cursor: pointer;
+    justify-content: left;   
+}
+
+.zero{
+    margin-left: 10px;
+}
+
+.operacao{
+    background-color: orange;
+    width: 61px;
+    height: 61px;
+    margin: 2%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.outros{
+    background-color: darkgray;
+    width: 61px;
+    height: 61px;
+    margin: 2.15%;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+}
+
+.outros:active{
+    filter: brightness(85%);
+}
+
+.numero:active{
+    filter: brightness(85%);
+}
+
+.operacao:active{
+    filter: brightness(85%);
+}
+
+.zero-wrapper:active{
+    filter: brightness(85%);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.calculadora{
+    width: 300px;
+    height: 500px;
+    border-color: rebeccapurple;
+    border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+

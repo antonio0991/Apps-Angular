@@ -1,0 +1,70 @@
+<body>
+    <div class="wrapper">
+        <div class = "calculadora">
+            <div class="tela">
+                {{ display }}
+            </div>
+            <div class="teclas">
+                <button class="outros" (click)="clearAll()">
+                    AC
+                </button>
+                <button class="outros" (click)="clear()">
+                    C
+                </button>
+                <button class="outros" (click)="reverseSign()">
+                    +/-
+                </button>
+                <button class="operacao" (click)="setOperacao('/')">
+                    ÷
+                </button>  
+                <button class="numero" (click)="appendNum('7')">
+                    7
+                </button> 
+                <button class="numero" (click)="appendNum('8')">
+                    8
+                </button>  
+                <button class="numero" (click)="appendNum('9')">
+                    9
+                </button>  
+                <button class="operacao" (click)="setOperacao('*')">
+                    x
+                </button> 
+                <button class="numero" (click)="appendNum('4')">
+                    4
+                </button> 
+                <button class="numero" (click)="appendNum('5')">
+                    5
+                </button>  
+                <button class="numero" (click)="appendNum('6')">
+                    6
+                </button>  
+                <button class="operacao" (click)="setOperacao('-')">
+                    -
+                </button>
+                <button class="numero" (click)="appendNum('1')">
+                    1
+                </button> 
+                <button class="numero" (click)="appendNum('2')">
+                    2
+                </button>  
+                <button class="numero" (click)="appendNum('3')">
+                    3
+                </button>  
+                <button class="operacao" (click)="setOperacao('+')">
+                    +
+                </button> 
+                <button class="zero-wrapper" (click)="appendNum('0')">
+                    <div class="zero">
+                        0
+                    </div>
+                </button>  
+                <button class="numero" (click)="appendNum('.')">
+                    .
+                </button>  
+                <button class="operacao" (click)="setResultado()">
+                    =
+                </button> 
+            </div>
+        </div>
+    </div>
+</body>

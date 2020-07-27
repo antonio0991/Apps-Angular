@@ -9,10 +9,12 @@ import { Bin2DecComponent } from './bin2-dec/bin2-dec.component';
 import { BorderRadiusPreviewerComponent } from './border-radius-previewer/border-radius-previewer.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { TrueOrFalseComponent } from './true-or-false/true-or-false.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule],
-  declarations: [ AppComponent, HelloComponent, NavbarComponent, Bin2DecComponent, BorderRadiusPreviewerComponent, HomeComponent ],
+  declarations: [ AppComponent, HelloComponent, NavbarComponent, Bin2DecComponent, BorderRadiusPreviewerComponent, HomeComponent, CalculadoraComponent, TrueOrFalseComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

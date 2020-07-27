@@ -1,0 +1,43 @@
+<div class="container">
+    <div align="center">
+      <h3>True or false: </h3>
+      <input placeholder="Insira a expressão"
+          type="text"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Insira a expressão'"
+          id = "string1"
+          (keyup)="onKeyup($event)"
+          >
+          <P></P>
+          <select id="operacao" name="operacao" (click)="onKeyup($event)">
+            <option value="==">==</option>
+            <option value="!=">!=</option>
+            <option value=">">></option>
+            <option value=">=">>=</option>
+            <option value="<"><</option>
+            <option value="<="><=</option>
+          </select>       
+          <P></P>   
+          <input placeholder="Insira a expressão"
+          type="text"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Insira a expressão'"
+          id = "string2"
+          (keyup)="onKeyup($event)"
+          >
+          <P></P>
+          <div  class="success" 
+          role="alert" 
+          style="display:none;"
+          [style.display]="evaluate() ? 'block' : 'none'"
+          >
+          True
+          </div>
+          <div  class="alert" 
+          role="alert" 
+          style="display:none;"
+          [style.display]="evaluate() ? 'none' : 'block'"
+          >
+         False
+  </div>
+</div>

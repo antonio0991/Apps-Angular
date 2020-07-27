@@ -27,7 +27,12 @@ router-outlet + *  {
   padding: 15px;
   background-color: #f44336; /* Red */
   color: white;
-  margin-bottom: 15px;
+}
+
+.success {
+  padding: 15px;
+  background-color: #33ff2c; 
+  color: white;
 }
 
 /* Text */
@@ -67,6 +72,16 @@ a:hover {
 /* Input */
 
 input {
+  font-size: 14px;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-color: #1B2A75;
+  background-color: #1B2A75;
+}
+
+select{
+  color: white;
+  font-weight: bold;
   font-size: 14px;
   padding: 8px;
   margin-bottom: 8px;

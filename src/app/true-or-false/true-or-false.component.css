@@ -1,0 +1,16 @@
+div{
+    width: 100%;
+    border-color: purple;
+    border-width: 0.5px;
+    border-style: solid;
+  }
+
+input{
+    width: 20em;
+    text-align: center;
+}
+
+::placeholder{
+    text-align: center;
+}
+
