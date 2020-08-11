@@ -40,36 +40,36 @@ export class TrueOrFalseComponent implements OnInit {
   }
 
   evaluate(): boolean{
-    var resultado: boolean = false;
+    var resultado: boolean = true;
     switch(this.expressao){
       case "==":
-        if(this.string1 == this.string2){
-          resultado = true;
+        if(this.string1 != this.string2){
+          resultado = false;
         }
         break;
       case "!=":
-        if(this.string1 != this.string2){
-          resultado = true;
+        if(this.string1 == this.string2){
+          resultado = false;
         }
         break;
       case '>':
-        if(this.string1 > this.string2){
-          resultado = true;
+        if(this.string1 <= this.string2){
+          resultado = false;
         }
         break;
       case '>=':
-        if(this.string1 >= this.string2){
-          resultado = true;
+        if(this.string1 < this.string2){
+          resultado = false;
         }
         break;
       case '<':
-        if(this.string1 < this.string2){
-          resultado = true;
+        if(this.string1 >= this.string2){
+          resultado = false;
         }
         break;
       case '<=':
-        if(this.string1 <= this.string2){
-          resultado = true;
+        if(this.string1 > this.string2){
+          resultado = false;
         }
         break;
     }

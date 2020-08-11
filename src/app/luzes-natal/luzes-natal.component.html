@@ -1,0 +1,35 @@
+<div class="wrapper">
+    <div class = "luz-verm-wrapper" id = "l0">
+        <div class = "luz-verm"></div>
+    </div>
+    <div class = "luz-azul-wrapper" id = "l1">
+        <div class = "luz-azul"></div>
+    </div>
+    <div class = "luz-verd-wrapper" id = "l2">
+        <div class = "luz-verd"></div>
+    </div>  
+    <div class = "luz-amar-wrapper" id = "l3">
+        <div class = "luz-amar"></div>
+    </div>
+    <div class = "luz-verm-wrapper" id = "l4">
+        <div class = "luz-verm"></div>
+    </div>
+    <div class = "luz-azul-wrapper" id = "l5">
+        <div class = "luz-azul"></div>
+    </div>
+    <div class = "luz-verd-wrapper" id = "l6">
+        <div class = "luz-verd"></div>
+    </div>  
+    <div class = "luz-amar-wrapper" id = "l7">
+        <div class = "luz-amar"></div>
+    </div>
+</div>
+<div class = 'button-container'>
+    <button [ngClass] = "ligado ? 'buttonOn' : 'buttonOff'"
+     (click) = "btnOnClick()"
+      id = "switch"> {{isOn()}} </button>
+</div>
+<div class="slider-container">
+    <input type="range" min="1" max="1000" value="500" class="slider" id="intervalo" (oninput)="setIntervalo()">
+</div>
+<div style="justify-content: center; display: flex;">Intervalo: {{intervalo}}ms</div>

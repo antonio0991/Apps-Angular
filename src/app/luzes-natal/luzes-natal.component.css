@@ -1,0 +1,218 @@
+.luz-verm-wrapper{
+    background-color: rgba(240, 52, 52, 0);
+    opacity: 0.3;
+    border-radius: 50%;
+    width: 6.4em;
+    height: 9.4em;
+}
+.luz-verm{
+    background-image: url(https://www.papertraildesign.com/wp-content/uploads/2018/08/Red-Christmas-Light.png);
+    border-radius: 50%;
+    width: 6.4em;
+    height: 9.4em;
+    background-size: 5em;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.luz-azul-wrapper{
+    background-color: rgba(43, 89, 238, 0);
+    opacity: 0.3;
+    border-radius: 50%;
+    width: 6.4em;
+    height: 9.4em;
+}
+.luz-azul{
+    background-image: url(https://www.papertraildesign.com/wp-content/uploads/2018/08/dark-blue-Christmas-Light-.png);
+    border-radius: 50%;
+    width: 6.4em;
+    height: 9.4em;
+    background-size: 5em;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.luz-verd-wrapper{
+    background-color: rgba(43, 238, 76, 0);
+    opacity: 0.3;
+    border-radius: 50%;
+    width: 6.4em;
+    height: 9.4em;
+}
+.luz-verd{
+    background-image: url(https://www.papertraildesign.com/wp-content/uploads/2018/08/Lime-green-Christmas-Light-.png);
+    border-radius: 50%;
+    width: 6.4em;
+    height: 9.4em;
+    background-size: 5em;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.luz-amar-wrapper{
+    background-color: rgba(252, 236, 11, 0);
+    opacity: 0.3;
+    border-radius: 50%;
+    width: 6.4em;
+    height: 9.4em;
+}
+.luz-amar{
+    background-image: url(https://www.papertraildesign.com/wp-content/uploads/2018/08/Yellow-Christmas-Light-.png);
+    border-radius: 50%;
+    width: 6.4em;
+    height: 9.4em;
+    background-size: 5em;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-container{
+    justify-content: center;
+    display: flex;
+}
+
+.buttonOn {
+	background-color:#5b006b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #9b14b3;
+    border: none;
+}
+.buttonOn:hover {
+	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+.buttonOn:active {
+	position:relative;
+	top:1px;
+}
+.buttonOn:focus{
+    outline: none;
+}
+
+.buttonOff {
+    background-color:#7a7a7a;
+    border: none;
+	cursor:pointer;
+    color:#ffffff;
+    display:inline-block;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #7a7a7a;
+
+}
+.buttonOff:hover {
+	background:linear-gradient(to bottom, #bdbdbd 5%, #dedede 100%);
+	background-color:#7a7a7a;
+}
+.buttonOff:active {
+    position:relative;
+    top: 1px;
+}
+.buttonOff:focus{
+    outline: none;
+}
+
+.slider-container{
+    justify-content: center;
+    display: flex;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 20em;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12.8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #ac51b5;
+    border-radius: 25px;
+    border: 0px solid #000101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 39px;
+    border-radius: 7px;
+    background: #65001c;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.6px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ac51b5;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12.8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #ac51b5;
+    border-radius: 25px;
+    border: 0px solid #000101;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 39px;
+    border-radius: 7px;
+    background: #65001c;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 12.8px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 39px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #ac51b5;
+    border: 0px solid #000101;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #ac51b5;
+    border: 0px solid #000101;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  }
+  input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 39px;
+    border-radius: 7px;
+    background: #65001c;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #ac51b5;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #ac51b5;
+  }

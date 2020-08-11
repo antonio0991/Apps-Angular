@@ -11,10 +11,11 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { TrueOrFalseComponent } from './true-or-false/true-or-false.component';
+import { LuzesNatalComponent } from './luzes-natal/luzes-natal.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule],
-  declarations: [ AppComponent, HelloComponent, NavbarComponent, Bin2DecComponent, BorderRadiusPreviewerComponent, HomeComponent, CalculadoraComponent, TrueOrFalseComponent ],
+  declarations: [ AppComponent, HelloComponent, NavbarComponent, Bin2DecComponent, BorderRadiusPreviewerComponent, HomeComponent, CalculadoraComponent, TrueOrFalseComponent, LuzesNatalComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
