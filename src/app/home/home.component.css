@@ -8,13 +8,13 @@ ul {
   
   ul li {
     border-color: purple;
-    border-width: 10%;
+    border-width: 4px;
     border-style: solid;
     background: #242424;
     padding: 1em;
-    margin-right: 10px;
-    width: 200px;
-    height: 200px;
+    margin: 5px;
+    width: 235px;
+    height: 235px;
     margin-bottom: 1em;
     display: flex;
     flex-direction: row;
