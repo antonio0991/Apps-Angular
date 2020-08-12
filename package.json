@@ -20,19 +20,22 @@
     "express": "^4.17.1",
     "path": "^0.12.7",
     "rxjs": "6.5.5",
+    "serve": "^11.3.2",
     "tslib": "^2.0.0",
     "typescript": "~3.9.5",
     "zone.js": "0.10.3"
   },
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
-    "build": "ng build",
-    "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod",
-    "postinstall": "ng build --aot --prod"
+    "postinstall": "ng build --aot --prod",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1000.0",
