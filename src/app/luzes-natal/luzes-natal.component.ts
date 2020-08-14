@@ -39,15 +39,6 @@ export class LuzesNatalComponent implements OnInit {
     return "Off" ;
   }
 
-  updateButtonStyle(){
-    if(this.ligado){
-
-    }
-    else{
-      
-    }
-  }
-
   btnOnClick(){
     if(!this.ligado){
       this.ligado = true;

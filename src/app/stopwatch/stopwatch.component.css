@@ -1,0 +1,22 @@
+.container{
+    width: 100%;
+    border-color: purple;
+    border-width: 0.5px;
+    border-style: solid;
+    justify-content: center;
+}
+
+.cronometro{
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(46,46,162,1) 58%, rgba(42,66,119,1) 100%);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 45;
+}
+
+button{
+    float: top;
+    background-color: grey;
+    
+}

@@ -16,19 +16,6 @@ export class TrueOrFalseComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSave(valor:string){
-    /*if(this.ehBinario()){
-      this.decimal = 0;
-      this.inversa = this.binario.split("").reverse().join("");
-      for(let i = 0; i<this.inversa.length; i++){
-        if(this.inversa.charAt(i) == '1'){
-          this.decimal += 2**i;
-        }
-      }
-      this.binario = this.inversa;
-      }*/
-  }
-
   onKeyup(event:KeyboardEvent){
     console.log(this.string1);
     console.log(this.string2);
