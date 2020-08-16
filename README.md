@@ -8,6 +8,9 @@ Projetos:
      - Previsor de raio da borda;
      - Calculadora;
      - Comparador de strings;
-     - Luzes de natal (em produção).
+     - Luzes de natal;
+     - Cronômetro (em produção).
+     
+Deployed to: https://apps-angular-f5422.web.app/
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-oealpm)
+
