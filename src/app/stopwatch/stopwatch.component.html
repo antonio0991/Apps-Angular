@@ -1,11 +1,20 @@
 <div class = "container">
     <div align = "center">
         <div class = "cronometro">
-            {{minutos}}:{{segundos}}:{{milissegundos}}
+            {{getTime()}}
         </div>
         <p></p>
-        <button (click) = "start()">Start</button>
-        <p></p>
-        <button>Lap</button>
+        <button (click) = "start()" [disabled] = "isStarted">Start</button>
+        <button (click) = "saveLap()">Lap</button>
+        <button (click) = "stop()" [disabled] = "!isStarted">Stop</button>
+        <button (click) = "reset()">Reset</button>
+        <button (click) = "clearLaps()" [disabled] = "temposVoltas.length == 0">Clear laps</button>
+    </div>
+    <div class = "laps-container">
+        <ul *ngFor="let time of temposVoltas">
+            <li>
+               {{time}} 
+            </li>
+        </ul>
     </div>
 </div>

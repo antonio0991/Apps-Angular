@@ -12,55 +12,63 @@ export class StopwatchComponent implements OnInit {
   startStop: String;
   minutos: number;
   segundos: number;
-  milissegundos: number;
-  tempoUltimaVolta: number;
-  temposVoltas:number[];
+  horas: number;
+  temposVoltas:string[] = [];
+  clock: NodeJS.Timeout;
   isStarted: boolean;
 
   ngOnInit(): void {
     this.minutos = 0;
     this.segundos = 0;
-    this.milissegundos = 0;
+    this.horas = 0;
   }
 
   start(){
-    while(this.isStarted){
-      //Esperar 10 milissegundos
-      new Promise(resolve => {
-        setTimeout(() => {
-          resolve(true);
-        }, 10);
-      });
-      this.milissegundos++;
-      if(this.milissegundos == 100){
-       this.segundos++;
-       this.milissegundos = 0; 
-      }
-      if(this.segundos == 60){
-        this.minutos++;
-        this.segundos = 0;
-      }
+    this.isStarted = true;
+    this.clock = setInterval(() => this.rollClock()
+    , 1000);
+  }
+
+  rollClock(){
+    this.segundos++;
+    if(this.segundos == 60){
+      this.segundos = 0;
+      this.minutos++;
+    }
+    if(this.minutos == 60){
+      this.minutos = 0;
+      this.horas++;
     }
   }
 
   stop(){
-
-  }
-
-  add10Ms(){
-
+    this.isStarted = false;
+    clearInterval(this.clock);
   }
 
   saveLap(){
-
+    this.temposVoltas.push(this.getTime());
+    console.log(this.temposVoltas);
   }
 
-  getLaps(){
-
+  reset(){
+    this.segundos = this.minutos = this.horas = 0;
+    this.stop();
   }
 
-  zerar(){
+  toStringWithLeadingZero(num: number): String{
+    if(num >= 10){
+      return "" + num;
+    }
+    return "0" + num;
+  }
 
+  clearLaps(){
+    this.temposVoltas = [];
+  }
+
+  getTime(){
+    return this.toStringWithLeadingZero(this.horas) + ":" + this.toStringWithLeadingZero(this.minutos) + ":" + this.toStringWithLeadingZero(this.segundos);
   }
 
 }
