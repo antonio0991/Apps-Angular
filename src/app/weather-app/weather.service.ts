@@ -11,6 +11,6 @@ export class WeatherService {
   API_KEY: String = "1b30b026f8534761a80d474a949ff40f"
 
   getWeather(city: string, units: string){
-    return this.http.get("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + units +  "&APPID=" + this.API_KEY)
+    return this.http.get("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=" + units +  "&APPID=" + this.API_KEY)
   }
 }

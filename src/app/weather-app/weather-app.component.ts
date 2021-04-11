@@ -74,7 +74,7 @@ export class WeatherAppComponent implements OnInit {
   }
 
   getIcon(icon: string){
-    (document.getElementById("icon") as HTMLImageElement).src = "http://openweathermap.org/img/w/" + icon + ".png"
+    (document.getElementById("icon") as HTMLImageElement).src = "https://openweathermap.org/img/w/" + icon + ".png"
   }
 
 }
