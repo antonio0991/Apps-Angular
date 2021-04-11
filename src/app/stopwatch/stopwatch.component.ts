@@ -48,7 +48,6 @@ export class StopwatchComponent implements OnInit {
 
   saveLap(){
     this.temposVoltas.push(this.getTime());
-    console.log(this.temposVoltas);
   }
 
   reset(){
