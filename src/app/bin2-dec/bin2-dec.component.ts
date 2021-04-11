@@ -16,7 +16,6 @@ export class Bin2DecComponent implements OnInit {
   inversa : string = '';
 
   onKeyup(event:KeyboardEvent){
-    console.log(Event);
     this.binario = (<HTMLInputElement>event.target).value;
   }
 

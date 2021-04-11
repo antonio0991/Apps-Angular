@@ -17,10 +17,6 @@ export class TrueOrFalseComponent implements OnInit {
   }
 
   onKeyup(event:KeyboardEvent){
-    console.log(this.string1);
-    console.log(this.string2);
-    console.log(this.expressao);
-    console.log(this.evaluate());
     this.string1 = (<HTMLInputElement>document.getElementById("string1")).value;
     this.string2 = (<HTMLInputElement>document.getElementById("string2")).value;
     this.expressao = (<HTMLInputElement>document.getElementById("operacao")).value;

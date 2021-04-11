@@ -10,6 +10,7 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { TrueOrFalseComponent } from './true-or-false/true-or-false.component';
 import { LuzesNatalComponent } from './luzes-natal/luzes-natal.component';
 import { StopwatchComponent } from './stopwatch/stopwatch.component';
+import { WeatherAppComponent } from './weather-app/weather-app.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },             
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'calculadora', component: CalculadoraComponent }, 
   { path: 'true-or-false', component: TrueOrFalseComponent }, 
   { path: 'luzes-natal', component: LuzesNatalComponent }, 
-  { path: 'stopwatch', component: StopwatchComponent}
+  { path: 'stopwatch', component: StopwatchComponent},
+  { path: 'weather-app', component: WeatherAppComponent}
 ];
 
 @NgModule({

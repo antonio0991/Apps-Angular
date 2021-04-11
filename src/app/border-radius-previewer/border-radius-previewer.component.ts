@@ -15,7 +15,6 @@ export class BorderRadiusPreviewerComponent implements OnInit {
 
   constructor() { }
     onKeyup(event:KeyboardEvent){
-    console.log(Event);
   }
 
   onSave(){

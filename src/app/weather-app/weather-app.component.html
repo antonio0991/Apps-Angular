@@ -1,0 +1,24 @@
+<div class="container">
+    <div align="center">
+      <h3>Tempo na sua cidade</h3>
+      <input placeholder = "Insira a cidade"
+          type="text"
+          [(ngModel)] = "city"
+          >
+          <button (click) = "getWeather()">Get Weather</button>
+  </div>
+</div>
+<div *ngIf="weather" class = "weather-container">
+  <div class = "weather">
+    <div class = "city">
+      {{weather.name}}, {{getCountry()}}
+    </div>
+      <div class = "temperature">
+        {{getTemperature()}}
+      </div>
+      <div class = "condition">
+        {{getCondition()}}
+        <img id = "icon">
+      </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+div{
+    width: 100%;
+  }
+
+.weather-container{
+  justify-content: center;
+  display: flex;
+}
+
+.weather{
+  width: 280px;
+  height: 280px;
+  background-color: rgba(255, 255, 255, .60);
+  border-radius: 20%;
+  padding: 2%;
+}
+
+.temperature{
+  color:rgba(255, 255, 52, 0.925);
+  font-size: 70;
+  margin-bottom: 2%;
+  margin-top: 10%;
+}
+
+.condition{
+  color:rgb(69, 20, 92);
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.city{
+  color: #141414;
+  font-weight: bolder;
+}
+
+button{
+  margin-left: 1vw;
+}
