@@ -9,7 +9,7 @@ Projetos:
      - Calculadora;
      - Comparador de strings;
      - Luzes de natal;
-     - Cronômetro (em produção).
+     - Cronômetro.
      
 Deployed to: https://apps-angular-f5422.web.app/
 
