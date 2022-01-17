@@ -2,7 +2,7 @@ nav {
 	float: left;
 	width: 20%;
 	height: 100%;
-	background: #ccc;
+	background: rgba(204, 204, 204, 0.158);
 	padding: 20px;
 }
 
@@ -16,16 +16,16 @@ nav ul li {
 	margin-bottom: 15px;
 }
 
-.m_title {
-	text-transform: capitalize;
+a:visited {
+	color: purple;
 }
 
 article {
 	float: left;
 	padding: 20px;
-	background-color: #f1f1f1;
 	width: 80%;
 	height: 100%;
+	background-color: rgba(204, 204, 204, 0.041);
 }
 
 /* Clear floats after the columns */

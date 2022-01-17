@@ -1,7 +1,7 @@
 <section onload="getPeople()">
   <nav>
     <ul>
-      <li *ngFor="let person of people; index as i;" ><a class="m_title" (click)="setPerson(i)">{{person.nome}}</a></li>
+      <li *ngFor="let person of people; index as i;" ><a  (click)="setPerson(i)">{{person.nome}}</a></li>
     </ul>
   </nav>
   

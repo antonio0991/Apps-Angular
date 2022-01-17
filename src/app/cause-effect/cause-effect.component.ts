@@ -10,7 +10,7 @@ import { Observable } from "rxjs";
 export class CauseEffectComponent implements OnInit {
 	constructor(private causeEffectService: CauseEffectService) {}
 
-	people: Array<any>;
+	people: any;
 	person: any;
 
 	ngOnInit(): void {
@@ -18,7 +18,7 @@ export class CauseEffectComponent implements OnInit {
 	}
 
 	getPeople() {
-		this.causeEffectService.getPeople().subscribe((result) => {
+		this.causeEffectService.getPeople().subscribe((result: any) => {
 			this.people = result.values;
 			this.person = this.people[0];
 			console.log(this.people);
