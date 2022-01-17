@@ -14,6 +14,7 @@ import { TrueOrFalseComponent } from './true-or-false/true-or-false.component';
 import { LuzesNatalComponent } from './luzes-natal/luzes-natal.component';
 import { StopwatchComponent } from './stopwatch/stopwatch.component';
 import { WeatherAppComponent } from './weather-app/weather-app.component';
+import { CauseEffectComponent } from './cause-effect/cause-effect.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
@@ -27,7 +28,7 @@ import { WeatherAppComponent } from './weather-app/weather-app.component';
     TrueOrFalseComponent, 
     LuzesNatalComponent, 
     StopwatchComponent, 
-    WeatherAppComponent 
+    WeatherAppComponent, CauseEffectComponent 
   ],
   bootstrap:    [ AppComponent ]
 })

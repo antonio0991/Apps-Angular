@@ -1,38 +1,38 @@
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  ul li {
-    border-color: purple;
-    border-width: 4px;
-    border-style: solid;
-    background: #242424;
-    padding: 1em;
-    margin: 5px;
-    width: 235px;
-    height: 235px;
-    margin-bottom: 1em;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  ul li a{
-    color: white;
-    font-size: 2em;
-  }
-  
-  .wrapper {
-      text-align: center;
-  }
-  .wrapper ul {
-      display: inline-block;
-      margin: 0;
-      padding: 0;
-  }
-  .wrapper li {
-      float: left;
-  }
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul li {
+	border-color: purple;
+	border-width: 4px;
+	border-style: solid;
+	background: #242424;
+	padding: 1em;
+	margin: 5px;
+	width: 230px;
+	height: 230px;
+	margin-bottom: 1em;
+	display: flex;
+	flex-direction: row;
+}
+
+ul li a {
+	color: white;
+	font-size: 2em;
+}
+
+.wrapper {
+	text-align: center;
+}
+.wrapper ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.wrapper li {
+	float: left;
+}

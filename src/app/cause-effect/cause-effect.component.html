@@ -1,0 +1,21 @@
+<section onload="getPeople()">
+  <nav>
+    <ul>
+      <li *ngFor="let person of people; index as i;" ><a class="m_title" (click)="setPerson(i)">{{person.nome}}</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>{{person.nome}}</h1>
+    <h2>Endereço:</h2>
+    <p>Rua {{person.endereco.logradouro}}, {{person.endereco.numero}} - {{person.endereco.cidade}}, {{person.endereco.estado}} - Brasil</p>
+    <h2>Telefone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Celular:</h2>
+    <p>{{person.telefone}} &nbsp;&nbsp; {{person.celular}}</p>
+    <h2>Data de nascimento: </h2>
+    <p>{{person.dataNascimento}}</p>
+    <h2>Email: </h2>
+    <p>{{person.email}}</p>
+    <h2>CPF:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RG:</h2>
+    <p>{{person.cpf}}&nbsp;&nbsp;&nbsp;&nbsp;{{person.rg}}</p>
+  </article>
+</section>

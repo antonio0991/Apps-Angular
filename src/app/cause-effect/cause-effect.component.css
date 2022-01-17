@@ -1,0 +1,42 @@
+nav {
+	float: left;
+	width: 20%;
+	height: 100%;
+	background: #ccc;
+	padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li {
+	margin-bottom: 15px;
+}
+
+.m_title {
+	text-transform: capitalize;
+}
+
+article {
+	float: left;
+	padding: 20px;
+	background-color: #f1f1f1;
+	width: 80%;
+	height: 100%;
+}
+
+/* Clear floats after the columns */
+section::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+section {
+	border-color: purple;
+	border-width: 0.5px;
+	border-style: solid;
+}
