@@ -17,9 +17,19 @@ export class CauseEffectComponent implements OnInit {
 		this.getPeople();
 	}
 
+	compare(a, b) {
+		if (a.nome < b.nome) {
+			return -1;
+		}
+		if (a.nome > b.nome) {
+			return 1;
+		}
+		return 0;
+	}
+
 	getPeople() {
 		this.causeEffectService.getPeople().subscribe((result: any) => {
-			this.people = result.values;
+			this.people = result.values.sort(this.compare);
 			this.person = this.people[0];
 			console.log(this.people);
 		}),
